@@ -1,0 +1,44 @@
+:root{
+    --Very-dark-blue: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue: hsl(244, 38%, 16%);
+    --Soft--violet: hsl(277, 64%, 61%);
+    --White: hsl(0, 0%, 100%);
+    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white-2: hsla(0, 0%, 100%, 0.6);
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-dark-blue);
+    padding: 2rem;
+}
+
+img {
+    max-inline-size: 100%;
+    max-block-size: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width:20.625rem;
+    background-color: var(--Dark-desaturated-blue);
+    color: var(--White);
+}
+
+.container-informations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
