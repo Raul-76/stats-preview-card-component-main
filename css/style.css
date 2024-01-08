@@ -52,6 +52,17 @@ img {
 
 }
 
+@media screen and (min-width: 62rem){
+    .container{
+        flex-direction: row-reverse;
+        max-width:min(90%, 60rem);
+    }
+
+    .container > *{
+        flex-basis: 50%;
+    }
+}
+
 .hero-banner{
     position: relative;
 }
@@ -70,7 +81,22 @@ img {
 
 .hero-banner img{
     border-radius: 10px 10px 0 0;
-    object-fit: fill;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 62rem){
+    .hero-banner img{
+        height: 100%;
+        object-fit: fill;
+       
+    }
+
+    .hero-banner::before,
+    .hero-banner img{
+        border-radius: 0 10px 10px 0;
+
+    }
+
 }
 
 
@@ -124,4 +150,30 @@ img {
     font-size: .7rem;
     letter-spacing:2px ;
     color: var(--Slightly-transparent-white-2);
+}
+
+
+@media screen and (min-width: 62rem){
+    .container-informations{
+        padding: 3rem;
+        padding-right: 5rem;
+    }
+    .informations-insights{
+        margin: 0;
+    }
+    .text-highlight{
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .text-secondary{
+        text-align: left;
+    }
+
+    .informations-numbers{
+        display: flex;
+        width: 100%;
+        text-align: left;
+        justify-content: space-between;
+    }
 }
